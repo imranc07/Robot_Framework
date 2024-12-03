@@ -23,7 +23,7 @@ TestCase-1
     [Tags]    Start
     Open Browser    ${BASE_URL}    ${BROWSER}
     Maximize Browser Window
-    Set Browser Implicit Wait    20s
+    Set Browser Implicit Wait    30s
 
 TestCase-2
     [Documentation]    Enter name
@@ -84,30 +84,31 @@ TestCase-10
 TestCase-11
     [Documentation]    Select Date from Picker 1
     [Tags]    Date Picker 1
+
     Element Should Be Enabled    id=datepicker
     Click Element    datepicker
-    Element Should Be Visible    XPATH=//*[@id="ui-datepicker-div"]/table/tbody/tr[1]/td[3]/a
-    Click Element    //*[@id="ui-datepicker-div"]/table/tbody/tr[1]/td[3]/a
+    Element Should Be Visible    XPATH=//*[@id="ui-datepicker-div"]/table/tbody/tr[3]/td[2]/a
+    Click Element    //*[@id="ui-datepicker-div"]/table/tbody/tr[3]/td[2]/a
 
 TestCase-12
     [Documentation]    Select date from Date Picker 2
     [Tags]    Date Picker 2
     Element Should Be Disabled    id=txtDate
     CLick Element    txtDate
-    Element Should Be Visible    XPATH=//*[@id="ui-datepicker-div"]/table/tbody/tr[1]/td[5]/a
-    Click Element    //*[@id="ui-datepicker-div"]/table/tbody/tr[1]/td[5]/a
+    Element Should Be Visible    XPATH=//*[@id="ui-datepicker-div"]/table/tbody/tr[3]/td[6]/a
+    Click Element    //*[@id="ui-datepicker-div"]/table/tbody/tr[3]/td[6]/a
 
 TestCase-13
     [Documentation]    Select start and end date from Date Picker 3
     [Tags]    Date Picker 3
-    Element Should Be Enabled    id=start-date
+    Element Should Be Visible    id=start-date
     Input Text    id=start-date    ${START_DATE}
 
-    Element Should Be Enabled    id=end-date
+    Element Should Be Visible    id=end-date
     Input Text    id=end-date    ${END_DATE}
 
-    Element Should Be Enabled    XPATH=//*[@id="post-body-1307673142697428135"]/div[8]/button
-    Click Element    //*[@id="post-body-1307673142697428135"]/div[8]/button
+    Element Should Be Enabled    XPATH=//*[@class="date-picker-box"]/button
+    Click Element    //*[@class="date-picker-box"]/button
     Page Should Contain   You selected a range of 3 days. 
 
 TestCase-14
