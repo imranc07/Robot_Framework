@@ -1,324 +1,324 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-12-03T22:50:10.960094" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-12-03T23:20:11.055779" rpa="false" schemaversion="5">
 <suite id="s1" name="TestGUIElementsATP" source="F:\Python-Selenium\VScode\Self_Practice\Robot_Framework_TestAutomation\TestCases\TestGUIElementsATP.robot">
 <test id="s1-t1" name="TestCase-1" line="21">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:14.120044" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<msg time="2024-12-03T23:20:15.020046" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
 <arg>${BASE_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-03T22:50:14.119528" elapsed="30.973109"/>
+<status status="PASS" start="2024-12-03T23:20:15.019512" elapsed="58.279935"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-03T22:50:45.093740" elapsed="0.082859"/>
+<status status="PASS" start="2024-12-03T23:21:13.300546" elapsed="0.413456"/>
 </kw>
 <kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
 <arg>15s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-12-03T22:50:45.177990" elapsed="0.007737"/>
+<status status="PASS" start="2024-12-03T23:21:13.714761" elapsed="0.002868"/>
 </kw>
 <doc>Start automation</doc>
 <tag>Start</tag>
-<status status="PASS" start="2024-12-03T22:50:14.117320" elapsed="31.076398"/>
+<status status="PASS" start="2024-12-03T23:20:15.017426" elapsed="58.701027"/>
 </test>
 <test id="s1-t2" name="TestCase-2" line="28">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:45.289125" level="INFO">Element 'id=name' is displayed.</msg>
+<msg time="2024-12-03T23:21:14.148531" level="INFO">Element 'id=name' is displayed.</msg>
 <arg>id=name</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-03T22:50:45.208701" elapsed="0.080588"/>
+<status status="PASS" start="2024-12-03T23:21:13.721971" elapsed="0.426878"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:45.290397" level="INFO">Typing text 'Lara Croft' into text field 'id=name'.</msg>
+<msg time="2024-12-03T23:21:14.150242" level="INFO">Typing text 'Lara Croft' into text field 'id=name'.</msg>
 <arg>id=name</arg>
 <arg>${NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-03T22:50:45.289856" elapsed="0.267314"/>
+<status status="PASS" start="2024-12-03T23:21:14.149585" elapsed="0.605619"/>
 </kw>
 <doc>Enter name</doc>
 <tag>Name</tag>
-<status status="PASS" start="2024-12-03T22:50:45.197786" elapsed="0.360011"/>
+<status status="PASS" start="2024-12-03T23:21:13.720477" elapsed="1.035292"/>
 </test>
 <test id="s1-t3" name="TestCase-3" line="34">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:45.610418" level="INFO">Element 'id=email' is displayed.</msg>
+<msg time="2024-12-03T23:21:14.796616" level="INFO">Element 'id=email' is displayed.</msg>
 <arg>id=email</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-03T22:50:45.559582" elapsed="0.050991"/>
+<status status="PASS" start="2024-12-03T23:21:14.757851" elapsed="0.039004"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:45.611631" level="INFO">Typing text 'lara@tombraider.com' into text field 'id=email'.</msg>
+<msg time="2024-12-03T23:21:14.798127" level="INFO">Typing text 'lara@tombraider.com' into text field 'id=email'.</msg>
 <arg>id=email</arg>
 <arg>${EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-03T22:50:45.611137" elapsed="0.193094"/>
+<status status="PASS" start="2024-12-03T23:21:14.797542" elapsed="0.201457"/>
 </kw>
 <doc>Enter email</doc>
 <tag>Email</tag>
-<status status="PASS" start="2024-12-03T22:50:45.558938" elapsed="0.245913"/>
+<status status="PASS" start="2024-12-03T23:21:14.756917" elapsed="0.242725"/>
 </test>
 <test id="s1-t4" name="TestCase-4" line="40">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:45.847629" level="INFO">Element 'id=phone' is displayed.</msg>
+<msg time="2024-12-03T23:21:15.043954" level="INFO">Element 'id=phone' is displayed.</msg>
 <arg>id=phone</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-03T22:50:45.808350" elapsed="0.039427"/>
+<status status="PASS" start="2024-12-03T23:21:15.001520" elapsed="0.042790"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:45.848747" level="INFO">Typing text '9211921192' into text field 'id=phone'.</msg>
+<msg time="2024-12-03T23:21:15.046425" level="INFO">Typing text '9211921192' into text field 'id=phone'.</msg>
 <arg>id=phone</arg>
 <arg>${PHONE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-03T22:50:45.848308" elapsed="0.313913"/>
+<status status="PASS" start="2024-12-03T23:21:15.045591" elapsed="0.701482"/>
 </kw>
 <doc>Enter phone number</doc>
 <tag>Phone</tag>
-<status status="PASS" start="2024-12-03T22:50:45.806707" elapsed="0.356088"/>
+<status status="PASS" start="2024-12-03T23:21:15.000836" elapsed="0.747066"/>
 </test>
 <test id="s1-t5" name="TestCase-5" line="46">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:46.206174" level="INFO">Element 'id=textarea' is displayed.</msg>
+<msg time="2024-12-03T23:21:15.824147" level="INFO">Element 'id=textarea' is displayed.</msg>
 <arg>id=textarea</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-03T22:50:46.164754" elapsed="0.041576"/>
+<status status="PASS" start="2024-12-03T23:21:15.749842" elapsed="0.074565"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:46.207874" level="INFO">Typing text 'Lara Mansion' into text field 'id=textarea'.</msg>
+<msg time="2024-12-03T23:21:15.825773" level="INFO">Typing text 'Lara Mansion' into text field 'id=textarea'.</msg>
 <arg>id=textarea</arg>
 <arg>${ADDRESS}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-03T22:50:46.207051" elapsed="0.363142"/>
+<status status="PASS" start="2024-12-03T23:21:15.825140" elapsed="0.214316"/>
 </kw>
 <doc>Enter address</doc>
 <tag>Address</tag>
-<status status="PASS" start="2024-12-03T22:50:46.164053" elapsed="0.406708"/>
+<status status="PASS" start="2024-12-03T23:21:15.749093" elapsed="0.290937"/>
 </test>
 <test id="s1-t6" name="TestCase-6" line="52">
 <kw name="Element Should Be Enabled" owner="SeleniumLibrary">
 <arg>id=female</arg>
 <doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-12-03T22:50:46.572824" elapsed="0.108072"/>
+<status status="PASS" start="2024-12-03T23:21:16.042172" elapsed="0.250539"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:46.682136" level="INFO">Clicking element 'female'.</msg>
+<msg time="2024-12-03T23:21:16.295280" level="INFO">Clicking element 'female'.</msg>
 <arg>female</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-03T22:50:46.681595" elapsed="1.724922"/>
+<status status="PASS" start="2024-12-03T23:21:16.294837" elapsed="2.524079"/>
 </kw>
 <doc>Select gender</doc>
 <tag>Gender</tag>
-<status status="PASS" start="2024-12-03T22:50:46.572030" elapsed="1.835309"/>
+<status status="PASS" start="2024-12-03T23:21:16.041214" elapsed="2.778365"/>
 </test>
 <test id="s1-t7" name="TestCase-7" line="58">
 <kw name="Element Should Be Enabled" owner="SeleniumLibrary">
 <arg>id=sunday</arg>
 <doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-12-03T22:50:48.409187" elapsed="0.667770"/>
+<status status="PASS" start="2024-12-03T23:21:18.821501" elapsed="0.086877"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:49.077850" level="INFO">Clicking element 'sunday'.</msg>
+<msg time="2024-12-03T23:21:18.909624" level="INFO">Clicking element 'sunday'.</msg>
 <arg>sunday</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-03T22:50:49.077494" elapsed="0.242713"/>
+<status status="PASS" start="2024-12-03T23:21:18.909203" elapsed="0.135837"/>
 </kw>
 <kw name="Element Should Be Enabled" owner="SeleniumLibrary">
 <arg>id=saturday</arg>
 <doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-12-03T22:50:49.320916" elapsed="0.044518"/>
+<status status="PASS" start="2024-12-03T23:21:19.045865" elapsed="0.041449"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:49.366490" level="INFO">Clicking element 'saturday'.</msg>
+<msg time="2024-12-03T23:21:19.088253" level="INFO">Clicking element 'saturday'.</msg>
 <arg>saturday</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-03T22:50:49.365992" elapsed="0.121681"/>
+<status status="PASS" start="2024-12-03T23:21:19.087899" elapsed="0.115255"/>
 </kw>
 <doc>Select Day</doc>
 <tag>Day</tag>
-<status status="PASS" start="2024-12-03T22:50:48.408452" elapsed="1.079801"/>
+<status status="PASS" start="2024-12-03T23:21:18.820793" elapsed="0.382981"/>
 </test>
 <test id="s1-t8" name="TestCase-8" line="66">
 <kw name="Element Should Be Enabled" owner="SeleniumLibrary">
 <arg>id=country</arg>
 <doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-12-03T22:50:49.490008" elapsed="0.085451"/>
+<status status="PASS" start="2024-12-03T23:21:19.205280" elapsed="0.042026"/>
 </kw>
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:49.576477" level="INFO">Selecting options from selection list 'id=country' by value india.</msg>
+<msg time="2024-12-03T23:21:19.248506" level="INFO">Selecting options from selection list 'id=country' by value india.</msg>
 <arg>id=country</arg>
 <arg>india</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-12-03T22:50:49.576049" elapsed="0.884793"/>
+<status status="PASS" start="2024-12-03T23:21:19.247994" elapsed="0.480905"/>
 </kw>
 <doc>Select Country</doc>
 <tag>Country</tag>
-<status status="PASS" start="2024-12-03T22:50:49.489359" elapsed="0.972207"/>
+<status status="PASS" start="2024-12-03T23:21:19.204684" elapsed="0.525023"/>
 </test>
 <test id="s1-t9" name="TestCase-9" line="72">
 <kw name="Element Should Be Enabled" owner="SeleniumLibrary">
 <arg>id=colors</arg>
 <doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-12-03T22:50:50.463841" elapsed="0.073830"/>
+<status status="PASS" start="2024-12-03T23:21:19.732404" elapsed="0.088558"/>
 </kw>
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:50.538922" level="INFO">Selecting options from selection list 'id=colors' by value green.</msg>
+<msg time="2024-12-03T23:21:19.821967" level="INFO">Selecting options from selection list 'id=colors' by value green.</msg>
 <arg>id=colors</arg>
 <arg>green</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-12-03T22:50:50.538428" elapsed="0.250698"/>
+<status status="PASS" start="2024-12-03T23:21:19.821583" elapsed="0.246120"/>
 </kw>
 <doc>Select Colour</doc>
 <tag>Colour</tag>
-<status status="PASS" start="2024-12-03T22:50:50.463110" elapsed="0.327024"/>
+<status status="PASS" start="2024-12-03T23:21:19.731349" elapsed="0.337188"/>
 </test>
 <test id="s1-t10" name="TestCase-10" line="78">
 <kw name="Element Should Be Enabled" owner="SeleniumLibrary">
 <arg>id=animals</arg>
 <doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-12-03T22:50:50.793127" elapsed="0.052031"/>
+<status status="PASS" start="2024-12-03T23:21:20.070795" elapsed="0.048801"/>
 </kw>
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:50.846095" level="INFO">Selecting options from selection list 'id=animals' by value lion.</msg>
+<msg time="2024-12-03T23:21:20.120442" level="INFO">Selecting options from selection list 'id=animals' by value lion.</msg>
 <arg>id=animals</arg>
 <arg>lion</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-12-03T22:50:50.845707" elapsed="0.113881"/>
+<status status="PASS" start="2024-12-03T23:21:20.120113" elapsed="0.109798"/>
 </kw>
 <doc>Select Sorted List</doc>
 <tag>Sorted List</tag>
-<status status="PASS" start="2024-12-03T22:50:50.791913" elapsed="0.168257"/>
+<status status="PASS" start="2024-12-03T23:21:20.070072" elapsed="0.160366"/>
 </test>
 <test id="s1-t11" name="TestCase-11" line="84">
 <kw name="Element Should Be Enabled" owner="SeleniumLibrary">
 <arg>id=datepicker</arg>
 <doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-12-03T22:50:50.962459" elapsed="0.045378"/>
+<status status="PASS" start="2024-12-03T23:21:20.232416" elapsed="0.039809"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:51.008815" level="INFO">Clicking element 'datepicker'.</msg>
+<msg time="2024-12-03T23:21:20.273114" level="INFO">Clicking element 'datepicker'.</msg>
 <arg>datepicker</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-03T22:50:51.008395" elapsed="1.574468"/>
+<status status="PASS" start="2024-12-03T23:21:20.272764" elapsed="0.394440"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:52.655304" level="INFO">Element 'XPATH=//*[@id="ui-datepicker-div"]/table/tbody/tr[1]/td[3]/a' is displayed.</msg>
+<msg time="2024-12-03T23:21:20.775280" level="INFO">Element 'XPATH=//*[@id="ui-datepicker-div"]/table/tbody/tr[1]/td[3]/a' is displayed.</msg>
 <arg>XPATH=//*[@id="ui-datepicker-div"]/table/tbody/tr[1]/td[3]/a</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-03T22:50:52.583753" elapsed="0.071708"/>
+<status status="PASS" start="2024-12-03T23:21:20.668415" elapsed="0.107104"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:52.656456" level="INFO">Clicking element '//*[@id="ui-datepicker-div"]/table/tbody/tr[1]/td[3]/a'.</msg>
+<msg time="2024-12-03T23:21:20.780393" level="INFO">Clicking element '//*[@id="ui-datepicker-div"]/table/tbody/tr[1]/td[3]/a'.</msg>
 <arg>//*[@id="ui-datepicker-div"]/table/tbody/tr[1]/td[3]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-03T22:50:52.656076" elapsed="0.473461"/>
+<status status="PASS" start="2024-12-03T23:21:20.779225" elapsed="0.220123"/>
 </kw>
 <doc>Select Date from Picker 1</doc>
 <tag>Date Picker 1</tag>
-<status status="PASS" start="2024-12-03T22:50:50.961774" elapsed="2.168296"/>
+<status status="PASS" start="2024-12-03T23:21:20.231702" elapsed="0.768295"/>
 </test>
 <test id="s1-t12" name="TestCase-12" line="92">
 <kw name="Element Should Be Disabled" owner="SeleniumLibrary">
 <arg>id=txtDate</arg>
 <doc>Verifies that element identified by ``locator`` is disabled.</doc>
-<status status="PASS" start="2024-12-03T22:50:53.132170" elapsed="0.098755"/>
+<status status="PASS" start="2024-12-03T23:21:21.002997" elapsed="0.384280"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:53.231803" level="INFO">Clicking element 'txtDate'.</msg>
+<msg time="2024-12-03T23:21:21.388204" level="INFO">Clicking element 'txtDate'.</msg>
 <arg>txtDate</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-03T22:50:53.231453" elapsed="0.534871"/>
+<status status="PASS" start="2024-12-03T23:21:21.387867" elapsed="0.337112"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:53.806098" level="INFO">Element 'XPATH=//*[@id="ui-datepicker-div"]/table/tbody/tr[1]/td[5]/a' is displayed.</msg>
+<msg time="2024-12-03T23:21:21.778105" level="INFO">Element 'XPATH=//*[@id="ui-datepicker-div"]/table/tbody/tr[1]/td[5]/a' is displayed.</msg>
 <arg>XPATH=//*[@id="ui-datepicker-div"]/table/tbody/tr[1]/td[5]/a</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-03T22:50:53.767688" elapsed="0.038555"/>
+<status status="PASS" start="2024-12-03T23:21:21.725742" elapsed="0.052603"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:53.807282" level="INFO">Clicking element '//*[@id="ui-datepicker-div"]/table/tbody/tr[1]/td[5]/a'.</msg>
+<msg time="2024-12-03T23:21:21.781436" level="INFO">Clicking element '//*[@id="ui-datepicker-div"]/table/tbody/tr[1]/td[5]/a'.</msg>
 <arg>//*[@id="ui-datepicker-div"]/table/tbody/tr[1]/td[5]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-03T22:50:53.806846" elapsed="0.114866"/>
+<status status="PASS" start="2024-12-03T23:21:21.780613" elapsed="0.152410"/>
 </kw>
 <doc>Select date from Date Picker 2</doc>
 <tag>Date Picker 2</tag>
-<status status="PASS" start="2024-12-03T22:50:53.131495" elapsed="0.790858"/>
+<status status="PASS" start="2024-12-03T23:21:21.002042" elapsed="0.931564"/>
 </test>
 <test id="s1-t13" name="TestCase-13" line="100">
 <kw name="Element Should Be Enabled" owner="SeleniumLibrary">
 <arg>id=start-date</arg>
 <doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-12-03T22:50:53.924872" elapsed="0.105285"/>
+<status status="PASS" start="2024-12-03T23:21:21.936495" elapsed="0.054162"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:54.031281" level="INFO">Typing text '12-11-2024' into text field 'id=start-date'.</msg>
+<msg time="2024-12-03T23:21:21.991646" level="INFO">Typing text '12-11-2024' into text field 'id=start-date'.</msg>
 <arg>id=start-date</arg>
 <arg>${START_DATE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-03T22:50:54.030813" elapsed="0.405677"/>
+<status status="PASS" start="2024-12-03T23:21:21.991204" elapsed="0.213238"/>
 </kw>
 <kw name="Element Should Be Enabled" owner="SeleniumLibrary">
 <arg>id=end-date</arg>
 <doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-12-03T22:50:54.440615" elapsed="0.060867"/>
+<status status="PASS" start="2024-12-03T23:21:22.205259" elapsed="0.046389"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:54.504226" level="INFO">Typing text '15-11-2024' into text field 'id=end-date'.</msg>
+<msg time="2024-12-03T23:21:22.252665" level="INFO">Typing text '15-11-2024' into text field 'id=end-date'.</msg>
 <arg>id=end-date</arg>
 <arg>${END_DATE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-03T22:50:54.503522" elapsed="0.188994"/>
+<status status="PASS" start="2024-12-03T23:21:22.252231" elapsed="0.172451"/>
 </kw>
 <kw name="Element Should Be Enabled" owner="SeleniumLibrary">
 <arg>XPATH=//*[@id="post-body-1307673142697428135"]/div[8]/button</arg>
 <doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-12-03T22:50:54.693111" elapsed="0.044525"/>
+<status status="PASS" start="2024-12-03T23:21:22.425269" elapsed="0.060496"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:54.739052" level="INFO">Clicking element '//*[@id="post-body-1307673142697428135"]/div[8]/button'.</msg>
+<msg time="2024-12-03T23:21:22.486774" level="INFO">Clicking element '//*[@id="post-body-1307673142697428135"]/div[8]/button'.</msg>
 <arg>//*[@id="post-body-1307673142697428135"]/div[8]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-03T22:50:54.738632" elapsed="0.345878"/>
+<status status="PASS" start="2024-12-03T23:21:22.486350" elapsed="0.135335"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:55.169217" level="INFO">Current page contains text 'You selected a range of 3 days.'.</msg>
+<msg time="2024-12-03T23:21:22.686613" level="INFO">Current page contains text 'You selected a range of 3 days.'.</msg>
 <arg>You selected a range of 3 days.</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-12-03T22:50:55.085396" elapsed="0.084368"/>
+<status status="PASS" start="2024-12-03T23:21:22.622278" elapsed="0.064489"/>
 </kw>
 <doc>Select start and end date from Date Picker 3</doc>
 <tag>Date Picker 3</tag>
-<status status="PASS" start="2024-12-03T22:50:53.924077" elapsed="1.249253"/>
+<status status="PASS" start="2024-12-03T23:21:21.935330" elapsed="0.751989"/>
 </test>
 <test id="s1-t14" name="TestCase-14" line="113">
 <kw name="Drag And Drop" owner="SeleniumLibrary">
 <arg>id=draggable</arg>
 <arg>id=droppable</arg>
 <doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
-<status status="PASS" start="2024-12-03T22:50:55.176293" elapsed="0.883380"/>
+<status status="PASS" start="2024-12-03T23:21:22.689277" elapsed="1.013653"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-12-03T22:50:56.060995" level="INFO">Verifying element 'id=droppable' contains exact text 'Dropped!'.</msg>
+<msg time="2024-12-03T23:21:23.704712" level="INFO">Verifying element 'id=droppable' contains exact text 'Dropped!'.</msg>
 <arg>id=droppable</arg>
 <arg>Dropped!</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-12-03T22:50:56.060297" elapsed="0.092856"/>
+<status status="PASS" start="2024-12-03T23:21:23.704221" elapsed="0.142494"/>
 </kw>
 <doc>Drag and Drop operation</doc>
 <tag>dragdrop</tag>
-<status status="PASS" start="2024-12-03T22:50:55.175198" elapsed="0.978564"/>
+<status status="PASS" start="2024-12-03T23:21:22.688567" elapsed="1.158707"/>
 </test>
 <test id="s1-t15" name="TestCase-15" line="120">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-12-03T22:50:56.156096" elapsed="10.027528"/>
+<status status="PASS" start="2024-12-03T23:21:23.849560" elapsed="9.511898"/>
 </kw>
 <doc>Shutdown</doc>
 <tag>Stop</tag>
-<status status="PASS" start="2024-12-03T22:50:56.155388" elapsed="10.028966"/>
+<status status="PASS" start="2024-12-03T23:21:23.848837" elapsed="9.513722"/>
 </test>
 <doc>Test GUI Elements using robot</doc>
-<status status="PASS" start="2024-12-03T22:50:10.963488" elapsed="55.222872"/>
+<status status="PASS" start="2024-12-03T23:20:11.060379" elapsed="82.304176"/>
 </suite>
 <statistics>
 <total>

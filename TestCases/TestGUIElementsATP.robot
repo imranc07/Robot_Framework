@@ -23,7 +23,7 @@ TestCase-1
     [Tags]    Start
     Open Browser    ${BASE_URL}    ${BROWSER}
     Maximize Browser Window
-    Set Browser Implicit Wait    15s
+    Set Browser Implicit Wait    20s
 
 TestCase-2
     [Documentation]    Enter name
